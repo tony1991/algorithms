@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="userDao" class="com.alibaba.spring.ioc.dao.imp.UserDaoImp" />
+	
+	<bean id="userService" class="com.alibaba.spring.ioc.service.imp.UserServiceImp" >
+		<property name="userDao" bean="userDao"/>
+	</bean>
+	
+</beans>  

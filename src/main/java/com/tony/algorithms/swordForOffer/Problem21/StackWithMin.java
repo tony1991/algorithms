@@ -11,11 +11,9 @@ public class StackWithMin extends MyStack<Integer>{
 	public void push(Integer item)
 	{
 		dataStack.push(item);
-		if(minStack.length==0 || item<=minStack.head.data)
-		{
+		if(minStack.length==0 || item<=minStack.head.data) {
 			minStack.push(item);
-		}
-		else {
+		}else {
 			minStack.push(minStack.head.data);
 		}
 	}
