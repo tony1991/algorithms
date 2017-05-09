@@ -31,7 +31,7 @@ public class B {
         // A a = new A();
         // a.method();
         // 用于取得字节码类，必须在当前的classpath中，使用全称
-        CtClass ctClass = ClassPool.getDefault().get("com.alibaba.test.Aop.A");
+        CtClass ctClass = ClassPool.getDefault().get("com.tony.test.Aop.A");
         // 需要修改的方法名称
         String mname = "method";
         CtMethod mold = ctClass.getDeclaredMethod(mname);
@@ -61,7 +61,7 @@ public class B {
     private static void createClass() throws Exception {
         ClassPool pool = ClassPool.getDefault();
         // 创建Programmer类
-        CtClass cc = pool.makeClass("com.alibaba.Programmer");
+        CtClass cc = pool.makeClass("com.tony.Programmer");
         // 定义code方法
         CtMethod method = CtNewMethod.make("public void code(){}", cc);
         // 插入方法代码

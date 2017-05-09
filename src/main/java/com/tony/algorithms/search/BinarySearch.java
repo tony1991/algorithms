@@ -1,4 +1,4 @@
-package com.tony.algorithms;
+package com.tony.algorithms.search;
 
 /**
  * 类BinarySearch.java的实现描述：TODO 类实现描述 

@@ -1,19 +1,19 @@
 package com.tony.spring.ioc;
 
+import org.jdom2.Document;
+import org.jdom2.Element;
+import org.jdom2.input.SAXBuilder;
+
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.input.SAXBuilder;
-
 public class ClassPathXmlApplicationContext implements BeanFactory {
 
     private Map<String, Object> beans = new HashMap<String, Object>();
 
-    public ClassPathXmlApplicationContext(String file) throws Exception, Exception {
+    public ClassPathXmlApplicationContext(String file) throws Exception {
         SAXBuilder sb = new SAXBuilder();
 
         Document doc = sb.build(this.getClass().getClassLoader().getResourceAsStream(file));

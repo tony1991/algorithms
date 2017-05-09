@@ -1,8 +1,8 @@
 package com.tony.algorithms.swordForOffer.Problem5;
 
-import java.util.Stack;
+import com.tony.algorithms.swordForOffer.utils.ListNode;
 
-import com.alibaba.algorithms.swordForOffer.utils.ListNode;
+import java.util.Stack;
 
 /**
  * Created by liujia on 14-8-26.

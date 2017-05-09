@@ -1,8 +1,8 @@
 package com.tony.spring.ioc.service.imp;
 
-import com.alibaba.spring.ioc.dao.UserDao;
-import com.alibaba.spring.ioc.model.User;
-import com.alibaba.spring.ioc.service.UserService;
+import com.tony.spring.ioc.dao.UserDao;
+import com.tony.spring.ioc.model.User;
+import com.tony.spring.ioc.service.UserService;
 
 public class UserServiceImp implements UserService {
 

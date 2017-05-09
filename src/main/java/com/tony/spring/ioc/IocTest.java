@@ -1,7 +1,7 @@
 package com.tony.spring.ioc;
 
-import com.alibaba.spring.ioc.model.User;
-import com.alibaba.spring.ioc.service.UserService;
+import com.tony.spring.ioc.model.User;
+import com.tony.spring.ioc.service.UserService;
 
 public class IocTest {
 

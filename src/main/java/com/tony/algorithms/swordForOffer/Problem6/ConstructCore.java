@@ -1,8 +1,8 @@
 package com.tony.algorithms.swordForOffer.Problem6;
 
-import java.util.Arrays;
+import com.tony.algorithms.swordForOffer.utils.BinaryTreeNode;
 
-import com.alibaba.algorithms.swordForOffer.utils.BinaryTreeNode;
+import java.util.Arrays;
 
 /**
  * Created by liujia on 14-8-26.

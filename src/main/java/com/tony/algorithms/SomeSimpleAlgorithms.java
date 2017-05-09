@@ -1,5 +1,8 @@
 package com.tony.algorithms;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class SomeSimpleAlgorithms {
 
     public static void main(String[] args) {
@@ -101,6 +104,9 @@ public class SomeSimpleAlgorithms {
         System.out.println(y + "年" + m + "月" + d + "号是这一年的第" + dayNum + "天");
     }
 
+    /**
+     * 打印九九乘法表
+     */
     public static void getNineNine() {
         for (int i = 1; i < 10; i++) {
             for (int j = 1; j <= i; j++) {
@@ -114,4 +120,23 @@ public class SomeSimpleAlgorithms {
         }
     }
 
+    /**
+     * 输出字符串中的所有重复子串：
+     * 例如：abcab
+     * 输出: a, b, ab
+     *
+     * @param s
+     */
+    private static void subStr(String s) {
+        Set<String> stringSet = new HashSet<String>();
+        for (int i = 0; i < s.length(); i++) {
+            for (int j = i + 1; j <= s.length(); j++) {
+                String tstr = s.substring(i, j);
+                if (stringSet.contains(tstr)) {
+                    System.out.print(tstr + " ");
+                }
+                stringSet.add(tstr);
+            }
+        }
+    }
 }

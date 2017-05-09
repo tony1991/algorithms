@@ -1,6 +1,6 @@
 package com.tony.spring.ioc.service;
 
-import com.alibaba.spring.ioc.model.User;
+import com.tony.spring.ioc.model.User;
 
 public interface UserService {
 
